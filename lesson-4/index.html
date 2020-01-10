@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lesson 4 Otus</title>
+    <script type="text/javascript">
+      // структура
+      let collection = {
+        id: 1,
+        name: "Root element",
+        items: [
+          {
+            id: 2,
+            name: "Sub element",
+          },
+          {
+            id: 3,
+            name: "Sub element",
+            items: [
+              {
+                id: 5,
+                name: "Sub Sub element",
+              },
+              {
+                id: 6,
+                name: "Sub Sub element",
+              },
+              {
+                id: 7,
+                name: "Sub Sub element",
+              },
+            ]
+          },
+          {
+            id: 4,
+            name: "Sub element",
+          }
+        ]
+      };
+    </script>
+  </head>
+  <body>
+    <my-leaf item='{"id":1,"name":"Root element","items":[{"id":2,"name":"Sub element"},{"id":3,"name":"Sub element","items":[{"id":5,"name":"Sub Sub element"},{"id":6,"name":"Sub Sub element"},{"id":7,"name":"Sub Sub element"}]},{"id":4,"name":"Sub element"}]}'></my-leaf>
+  <script type="text/javascript" src="app.js?a131b0cdf704f326d907"></script></body>
+</html>
