@@ -9,7 +9,7 @@ const async = util.promisify(request);
 const count = process.argv[2] || 1;
 const type = Number(process.argv[3]) === TYPE_ASYNC ? TYPE_ASYNC : TYPE_SYNC;
 
-async function get(count = 0) {
+async function get(count = 1) {
     const response = await async('http://localhost:8080');
 
     console.log(response.body);
